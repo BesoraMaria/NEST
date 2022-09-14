@@ -29,15 +29,6 @@ def ang_2vec (A, B):
     ang_rad= np.arccos(np.dot(A,B)/(np.linalg.norm(A)*np.linalg.norm(B)))
     return(ang_rad)
 
-#Defining values for molec image 
-def render_mol(xyz):
-    xyzview = py3Dmol.view(width=300,height=300)
-    xyzview.addModel(xyz,'xyz')
-    xyzview.setStyle({'stick':{}})
-    xyzview.setBackgroundColor('white')#('0xeeeeee')
-    xyzview.zoomTo()
-    showmol(xyzview, height = 300,width=300)
-
 #Defining empty variables
 atoms=[]
 coor_x=[]
@@ -395,71 +386,5 @@ if XYZ:
             file_name='geomNEST_Q4_'+user_file.name+'.txt'
             )
 
-
-
-
-
-#IMAGE = st.checkbox("Generate NEST Image")
-#
-#if IMAGE:
-#   st.write("Making surface ...")
-
-#   contorn=[]
-#   a2=0
-#   lini=0
-#   dcell=0
-#   nfree=[]
-#   cf_x=[]
-#   cf_y=[]
-#   cf_z=[]
-
-#   lim=(cell_size/10)
-#   
-#   with open('geomNEST_'+user_file.name) as fitxer:
-#       nfree = fitxer.readlines()
-#   
-#   a2= len(atoms)+2
-
-#   for i in range(a2):
-#       del(nfree[0])
-
-#   for lini in nfree:
-#           split=lini.split()
-#           cf_x.append(float(split[1]))
-#           cf_y.append(float(split[2]))
-#           cf_z.append(float(split[3]))
-
-#   for ce in range(len(nfree)):
-#       n=0
-#       if ((cf_x[ce]-cell_size), cf_y[ce], cf_z[ce]) in nfree:
-#           if((cf_x[ce]+cell_size), cf_y[ce], cf_z[ce]) in nfree:
-#               if(cf_x[ce], (cf_y[ce]-cell_size), cf_z[ce]) in nfree:
-#                   if(cf_x[ce], (cf_y[ce]+cell_size), cf_z[ce]) in nfree:
-#                       if(cf_x[ce], cf_y[ce], (cf_z[ce]+cell_size)) in nfree:
-#                           if(cf_x[ce], cf_y[ce], (cf_z[ce]+cell_size) in nfree:
-#                               cont_coords=[cf_x[ce],cf_y[ce],cf_z[ce]]
-#                               contorn.append(cont_coords)
-#                           else break
-#                       else break
-#                   else break
-#               else break
-#           else break
-#       else break
-
-#        for ce2 in range(len(nfree)):
-#            dcell = calc_dist(cf_x[ce],cf_y[ce],cf_z[ce],cf_x[ce2],cf_y[ce2],cf_z[ce2])
-#
-#            if (lim <= dcell <= (cell_size+lim)):
-#                n = n + 1
-#
-#            if (n == 6): 
-#                cont_coords=[cf_x[ce],cf_y[ce],cf_z[ce]]
-#                contorn.append(cont_coords)
-#
-#    st.write(contorn)
-
-#        uploaded_file = 'geomNEST_'+user_file.name+'.txt'
-#        xyz = uploaded_file.getvalue().decode("utf-8")
-#        render_mol(xyz)
 
 
