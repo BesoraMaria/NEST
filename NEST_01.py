@@ -109,7 +109,7 @@ with st.form(key="form1"):
         
         anglexy = ang_2vec(p1,p2)
         
-        if ((newcoor_x[b]*np.sin(anglexy) + newcoor_y[b]*np.cos(anglexy)) >= 0):
+        if ((int((newcoor_x[b]*np.cos(anglexy) - newcoor_y[b]*np.sin(anglexy))*1000) / 1000) != 0):
             anglexynew=2*(math.pi) - anglexy
             anglexy=anglexynew
 
@@ -126,7 +126,7 @@ with st.form(key="form1"):
         p4=(0,-pointy2,0)
         anglexyz = ang_2vec(p3,p4)
 
-        if ((newcoor2_y[b]*np.cos(anglexyz) - newcoor_z[b]*np.sin(anglexyz)) > newcoor2_y[b]):
+        if ((int((newcoor2_y[b]*np.sin(anglexyz) + newcoor_z[b]*np.cos(anglexyz))*1000) / 1000) != 0):
             anglexyznew=2*(math.pi) - anglexyz
             anglexyz=anglexyznew
 
@@ -142,7 +142,7 @@ with st.form(key="form1"):
         p6=(0,0,-pointy3)
         anglexz = ang_2vec(p5,p6)
         
-        if ((newcoor2_x[c]*np.sin(anglexz) + newcoor2_z[c]*np.cos(anglexz)) >= 0):
+        if ((int((newcoor2_x[c]*np.cos(anglexz) - newcoor2_z[c]*np.sin(anglexz)) * 1000) / 1000) != 0):
             anglexznew=2*(math.pi) - anglexz
             anglexz=anglexznew
 
