@@ -366,35 +366,35 @@ if XYZ:
         btn = st.download_button(
             label="Download NEST geometry",
             data=file,
-            file_name='geomNEST_'+user_file.name+'.txt'
+            file_name='geomNEST_'+user_file.name
             )
 
     with open('geomNEST_Q1_'+user_file.name,'r') as file:
         btn = st.download_button(
             label="Download Q1",
             data=file,
-            file_name='geomNEST_Q1_'+user_file.name+'.txt'
+            file_name='geomNEST_Q1_'+user_file.name
             )
 
     with open('geomNEST_Q2_'+user_file.name,'r') as file:
         btn = st.download_button(
             label="Download Q2",
             data=file,
-            file_name='geomNEST_Q2_'+user_file.name+'.txt'
+            file_name='geomNEST_Q2_'+user_file.name
             )
 
     with open('geomNEST_Q3_'+user_file.name,'r') as file:
         btn = st.download_button(
             label="Download Q3",
             data=file,
-            file_name='geomNEST_Q3_'+user_file.name+'.txt'
+            file_name='geomNEST_Q3_'+user_file.name
             )
 
     with open('geomNEST_Q4_'+user_file.name,'r') as file:
         btn = st.download_button(
             label="Download Q4",
             data=file,
-            file_name='geomNEST_Q4_'+user_file.name+'.txt'
+            file_name='geomNEST_Q4_'+user_file.name
             )
 
 
