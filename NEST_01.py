@@ -72,11 +72,12 @@ with st.form(key="form1"):
         #deleting the two initial lines that in the xyz files do not correspond to atoms but atom numbers and title/empty
         del(all_lines[0])
         del(all_lines[0])
-            
-        #if there is a final empty line must be deleted
-        all_lines2 = filter(lambda x: not re.match(r'^\s*$', x), all_lines)
         
         st.write(all_lines)
+                
+        #if there is a final empty line must be deleted
+        all_lines2 = filter(lambda x: not re.match(r'^\s*$', x), all_lines)
+       
         st.write(all_lines2)
         
         #splitting the information of the coordinates in atoms, x y and z
