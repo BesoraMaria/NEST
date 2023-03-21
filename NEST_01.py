@@ -10,7 +10,9 @@ import re
 from math import sqrt
 
 st.title("NEST Volume Calculation")
-st.image(figura.png, caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+image = Image.open('figura.jpg')
+
+st.image(image, caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
 
 
 #Setting a dictionary with atom radii
