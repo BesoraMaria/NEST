@@ -4,7 +4,9 @@ The NEST tool is inspired on the great utility of SambVuca (Organometallics 2016
 ![Scheme](https://github.com/BesoraMaria/NEST/blob/main/figura.png?raw=true)
 An atom “M” must be provided as origin of coordinates, usually the metal centre. Another atom, usually the central atom of the ligand “CL” must be provided to describe de y axis. And a third atom is necessary to define the z axis. This last atom will be only used in quadrant analysis. 
 NEST needs of an xyz file, containing number of atoms in first line, and a line followed by cartessian coordinates (atom_type x y z). The results will depend on the atoms chosen to define the axis but also on the size of boxes (grid) and the scaling factor of Bondi Radii of atoms.
+
 ![Quadrants](https://github.com/BesoraMaria/NEST/blob/main/quatrecyan.png?raw=true)
+
 NEST is available, as a code to be downloaded, but also is available as a web app in Streamlit: https://besoramaria-nest-nest-01-f2n5of.streamlit.app/
 
 This progect has been developed by Dr. M Besora at the URV with the help of Dr. JI Mujika and G.D. Nunez.
