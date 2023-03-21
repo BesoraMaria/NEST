@@ -76,6 +76,9 @@ with st.form(key="form1"):
         #if there is a final empty line must be deleted
         all_lines2 = filter(lambda x: not re.match(r'^\s*$', x), all_lines)
         
+        st.write(all_lines)
+        st.write(all_lines2)
+        
         #splitting the information of the coordinates in atoms, x y and z
         for line in all_lines2:
             split=line.split()
