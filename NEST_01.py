@@ -74,8 +74,7 @@ with st.form(key="form1"):
         del(all_lines[0])
         del(all_lines[0])
         
-        st.write(all_lines)
-                
+        all_lines2 = []
         #if there is a final empty line must be deleted
         all_lines2 = filter(lambda x: not re.match(r'^\s*$', x), all_lines)
        
