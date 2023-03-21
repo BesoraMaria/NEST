@@ -8,6 +8,7 @@ import numpy as np
 import math
 import re
 from math import sqrt
+from PIL import Image
 
 st.title("NEST Volume Calculation")
 image = Image.open('figura.jpg')
