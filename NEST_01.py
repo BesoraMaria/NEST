@@ -74,7 +74,7 @@ with st.form(key="form1"):
         del(all_lines[0])
             
         #if there is a final empty line must be deleted
-        all_lines = [line for line in all_lines.split('\n') if line.strip() != '']
+        all_lines = all_lines.replace('\n\n','\n').replace('\n\n','\n')
         #splitting the information of the coordinates in atoms, x y and z
         for line in all_lines:
             split=line.split()
