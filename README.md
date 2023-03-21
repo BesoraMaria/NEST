@@ -54,4 +54,6 @@ Also, five different .xyz files can be downloaded, one with the full NEST volume
 
 ## Development
 
+This progect has been developed by Dr. M Besora at the URV with the help of Dr. JI Mujika and G.D. Nunez.
+
 ## Citation
