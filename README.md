@@ -5,23 +5,18 @@ The NEST tool is inspired on the great utility of SambVuca (Organometallics 2016
 ![Scheme](https://github.com/BesoraMaria/NEST/blob/main/figura.png?raw=true)
 An atom “M” must be provided as origin of coordinates, usually the metal centre. Another atom, usually the central atom of the ligand “CL” must be provided to describe de y axis. And a third atom is necessary to define the z axis. This last atom will be only used in quadrant analysis. 
 NEST needs of an xyz file, containing number of atoms in first line, and a line followed by cartessian coordinates (Atomic_symbol x y z). The results will depend on the atoms chosen to define the axis but also on the size of boxes (grid) and the scaling factor of Bondi Radii of atoms.
-
 ![Quadrants](https://github.com/BesoraMaria/NEST/blob/main/quatrecyan.png?raw=true)
-
 The volume occupation for each of the 4 quadrants, defined from the metal center until the end of the capsule (oposite direction to CL) and taking the atom defined as Z to set position of quadrant boundaries is also computed. Quadrant occupation is given as Q1occ, Q2occ, Q3occ and Q4occ.
 
 ## Availability
-
 NEST is available, as a code to be downloaded, but also is available as a web app in Streamlit: https://besoramaria-nest-nest-01-f2n5of.streamlit.app/
 
-
 ## Usage
-
 To use NEST App the user needs an xyz file of the molecules of interest. The xyz file should have the standard format of first line giving the total number of atoms, second line with title or empty line, and coordinates starting from the third line. Coordinates should be expressed as:
 
 atom_symbol   x_coordinate   y_coordinate   z_coordinate
 
-Then follow the steps that the app gives to the user, fill in atom number to place the origin (M), atom number of the ligand to place the y axis (CL) and atom number (Z) to place the z axis. This is a crucial step, if the orientation is not the desired, the description obtained will not have the expected meaning.In more detail:
+Then follow the steps that the app gives to the user, fill in atom number to place the origin (M), atom number of the ligand to place the y axis (CL) and atom number (Z) to place the z axis. This is a crucial step, if the orientation is not the desired, the description obtained will not have the expected meaning. In more detail:
  
   The NEST App will ask you "Number of origin atom (Metal)"
   The atom selected as "origin atom" will become the origin of coordinates (0,0  0,0 0,0) after running the app. This atom is expected to be, usually, the considered metal center, although it can be any atom. The number corresponds to the number of the selected atom in the atom list (first atom 1, second atom 2, and so on). A ghost atom could be included to place the center of coordinates at the desired point. The atom number can be easily checked by any visualizer able to open xyz files, like jmol, vmd, avogadro,...
