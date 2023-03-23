@@ -9,12 +9,12 @@ import math
 import re
 from math import sqrt
 from PIL import Image
-
+st.title("NEST App")
 st.title("NEST Occupied Volume Calculation")
 image = Image.open('figura.jpg')
 
 st.image(image, caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-st.subheader("Fore more information and details visit https://github.com/BesoraMaria/NEST/edit/main/NEST_01.py ")
+st.subheader("Fore more information and details visit https://github.com/BesoraMaria/NEST/ ")
 
 #Setting a dictionary with atom radii
 
