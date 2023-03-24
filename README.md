@@ -55,6 +55,9 @@ Q4occ(x-,y+,z-) in %, it gives the occupied area respect to the  Q4 area (occupi
 
 ## Development
 
-This progect has been developed by Dr. M Besora at the URV with the help of Dr. JI Mujika and G.D. Nunez.
+The NEST App has been developed by Dr. M Besora at the URV with the help of Dr. JI Mujika and G.D. Nunez.
 
-## Citation
+## Citing NEST 
+
+G. Zuccarello, L.J. Nannini, A. Arroyo-Bondía, N. Fincias, I. Arranz, A.H. Pérez-Jimeno, M. Peeters, I. Martín-Torres, A. Sadurní, V. García, Y. Wang, M.S. Kirillova, M. Montesinos-Magraner, U. Caniparoli, G.D. Núñez, F. Maseras, M. Besora, I. Escofet, A.M. Echavarren. Enantioselective Catalysis with Pyrrolidinyl Gold(I) Complexes: DFT and NEST Analysis of the Chiral Binding Pocket. To be published
+
