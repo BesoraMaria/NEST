@@ -56,8 +56,6 @@ with st.form(key="form1"):
     #Define the atoms to delete
 
     notinc = ([int(item) for item in st.text_input('Atoms excluded in V calculation (enter atom number):').split()] )
-
-    st.write(notinc)
     
     #Define the size of the box with input
 
@@ -164,6 +162,10 @@ with st.form(key="form1"):
         #Now the new alignement has been set.
         
         #Deleting atoms we don't want to take into account
+        #Ordering the list of atoms from high to low to delete the correct one
+        
+        notinc.sort(reverse=True)
+        
         for i in range(len(notinc)):
             num=int(notinc[i])-1
             del(newcoor3_x[num])
