@@ -57,6 +57,8 @@ with st.form(key="form1"):
 
     notinc = ([int(item) for item in st.text_input('Atoms excluded in V calculation (enter atom number):').split()] )
 
+    st.write(notinc)
+    
     #Define the size of the box with input
 
     size = float(st.text_input('NEST Size: 3,5 + length + 3,5. Give value for "length" (default=2):  ',2) or "2")
