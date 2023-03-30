@@ -55,7 +55,7 @@ Q4occ(x-,y+,z-) in %, it gives the occupied area respect to the  Q4 area (occupi
 
 ## Development
 
-The NEST App has been developed by Dr. M Besora at the URV with the help of Dr. JI Mujika and G.D. Nunez.
+The NEST App has been developed by Dr. M Besora at the URV with the help of Dr. JI Mujika and Gonzalo D. Núñez.
 
 ## Citing NEST 
 
