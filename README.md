@@ -13,7 +13,7 @@ The volume occupation for each of the 4 quadrants, defined from the metal center
 NEST is available, as a code to be downloaded, but also is available as a web app in Streamlit: https://besoramaria-nest-nest-01-f2n5of.streamlit.app/
 
 ## Citing NEST
-G. Zuccarello, L.J. Nannini, A. Arroyo-Bondía, N. Fincias, I. Arranz, A.H. Pérez-Jimeno, M. Peeters, I. Martín-Torres, A. Sadurní, V. García, Y. Wang, M.S. Kirillova, M. Montesinos-Magraner, U. Caniparoli, G.D. Núñez, F. Maseras, M. Besora, I. Escofet, A.M. Echavarren. Enantioselective Catalysis with Pyrrolidinyl Gold(I) Complexes: DFT and NEST Analysis of the Chiral Binding Pocket. * JACS Au *, 2023, XXXX. https://doi.org/10.1021/jacsau.3c00159
+G. Zuccarello, L.J. Nannini, A. Arroyo-Bondía, N. Fincias, I. Arranz, A.H. Pérez-Jimeno, M. Peeters, I. Martín-Torres, A. Sadurní, V. García, Y. Wang, M.S. Kirillova, M. Montesinos-Magraner, U. Caniparoli, G.D. Núñez, F. Maseras, M. Besora, I. Escofet, A.M. Echavarren. Enantioselective Catalysis with Pyrrolidinyl Gold(I) Complexes: DFT and NEST Analysis of the Chiral Binding Pocket. * JACS Au * , 2023, XXXX. https://doi.org/10.1021/jacsau.3c00159
 
 ## Usage
 To use NEST App the user needs an xyz file of the molecules of interest. The xyz file should have the standard format of first line giving the total number of atoms, second line with title or empty line, and coordinates starting from the third line. Coordinates should be expressed as:
