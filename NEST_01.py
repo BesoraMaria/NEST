@@ -14,7 +14,7 @@ st.title("NEST Occupied Volume Calculation")
 image = Image.open('figure.png')
 
 st.image(image, caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-st.subheader("Cite JACS Au , 2023, XXXX. https://doi.org/10.1021/jacsau.3c00159 Fore more information and details visit https://github.com/BesoraMaria/NEST ")
+st.subheader("Cite JACS Au , 2023, 3, 6, 1742–1754. https://doi.org/10.1021/jacsau.3c00159 Fore more information and details visit https://github.com/BesoraMaria/NEST ")
 
 #Setting a dictionary with atom radii
 
